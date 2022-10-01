@@ -16,13 +16,29 @@ body {
 }
 
 .modal {
+  display: flex;
+  gap: 16px;
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.text  {
+  margin: 8px 0 16px;
 }
 
 .icon {
+  flex-shrink: 0;
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
@@ -36,7 +52,7 @@ body {
 }
 
 .close-button {
-  background: #eee;
+  background: rgb(216, 216, 216);
   border-radius: 50%;
   color: #888;
   font-weight: 400;
